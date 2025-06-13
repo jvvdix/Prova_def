@@ -1,0 +1,123 @@
+.orders-container {
+  max-width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Inter", sans-serif;
+  color: #111827;
+  padding: 1.5rem 1rem;
+
+  background-color: #f9fafb;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.header {
+  background: white;
+  padding: 1.5rem 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 15px rgb(0 0 0 / 0.05);
+}
+
+.title-page {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+.info-count p {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+}
+
+.order-filters {
+  background-color: #fff;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 15px rgb(0 0 0 / 0.05);
+  padding: 1.5rem 2rem;
+  font-family: "Inter", sans-serif;
+  color: #111827;
+  max-width: 100%;
+}
+
+.order-filters h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 1.5rem;
+}
+
+.order-filters label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 0.5rem;
+}
+
+.order-filters select,
+.order-filters input[type="date"] {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  border: 1.5px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+  color: #111827;
+  background-color: white;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+.order-filters select:focus,
+.order-filters input[type="date"]:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgb(99 102 241 / 0.3);
+}
+
+.order-filters button {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #4b5563;
+  background-color: #e5e7eb;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-top: 15px;
+}
+
+.order-filters button:hover,
+.order-filters button:focus {
+  background-color: #d1d5db;
+  color: #3730a3;
+  outline: none;
+  box-shadow: 0 0 0 3px rgb(99 102 241 / 0.4);
+}
+
+@media (min-width: 768px) {
+  .order-filters > .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem 2rem;
+  }
+
+  .order-filters > .grid > div:last-child {
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.5rem;
+  }
+}

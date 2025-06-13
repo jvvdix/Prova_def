@@ -1,0 +1,54 @@
+.orders-container {
+  max-width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Inter", sans-serif;
+  color: #111827;
+}
+
+.header {
+  margin-bottom: 1.5rem;
+}
+
+.title-page {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.25rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #4b5563;
+}
+
+.info-count p {
+  font-size: 0.875rem;
+  color: #4b5563;
+}
+
+.empty-state {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.1);
+}
+
+.empty-icon {
+  font-size: 4rem;
+  color: #9ca3af;
+}
+
+.empty-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.empty-desc {
+  font-size: 1rem;
+  color: #4b5563;
+}
+
+.orders-list > * + * {
+  margin-top: 1rem;
+}

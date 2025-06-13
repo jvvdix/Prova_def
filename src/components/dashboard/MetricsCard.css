@@ -1,0 +1,53 @@
+.metrics-card {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.1);
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.metrics-icon-wrapper {
+  border-radius: 0.375rem;
+  padding: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.25rem;
+}
+
+/* colors */
+.bg-blue-500 {
+  background-color: #3b82f6;
+}
+
+.bg-yellow-500 {
+  background-color: #facc15;
+}
+
+.bg-green-500 {
+  background-color: #22c55e;
+}
+
+.bg-purple-500 {
+  background-color: #8b5cf6;
+}
+
+.metrics-content {
+  margin-left: 1rem;
+}
+
+.metrics-title {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #4b5563;
+  margin: 0;
+}
+
+.metrics-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+  margin-top: 0.25rem;
+}

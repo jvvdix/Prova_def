@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+.login-bg {
+  background: linear-gradient(135deg, #e0e7ff, #f9fafb);
+  font-family: "Inter", sans-serif;
+  height: 100vh;
+  box-sizing: border-box;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-box {
+  max-width: 400px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 1.5rem;
+  padding: 3rem 2.5rem;
+  min-height: 520px;
+  box-shadow: 0 20px 30px rgba(99, 102, 241, 0.15),
+    0 10px 15px rgba(99, 102, 241, 0.1);
+  transition: box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-box:hover {
+  box-shadow: 0 25px 40px rgba(99, 102, 241, 0.25),
+    0 15px 25px rgba(99, 102, 241, 0.15);
+}
+
+.login-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e293b;
+  text-align: center;
+  letter-spacing: 0.05em;
+  user-select: none;
+  margin-bottom: 1.5rem;
+}
+
+.login-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #475569;
+  font-size: 1rem;
+  user-select: none;
+  margin-top: 5px;
+}
+
+.login-input {
+  width: 100%;
+  padding: 0.75rem 1.25rem;
+  font-size: 1.125rem;
+  border-radius: 0.75rem;
+  border: 2.5px solid #cbd5e1;
+  background-color: #f1f5f9;
+  color: #0f172a;
+  font-weight: 500;
+  transition: border-color 0.4s ease, box-shadow 0.4s ease,
+    background-color 0.3s ease;
+  font-family: "Inter", sans-serif;
+  user-select: text;
+}
+
+.login-input::placeholder {
+  color: #94a3b8;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.login-input:focus {
+  outline: none;
+  border-color: #6366f1;
+  background-color: white;
+  box-shadow: 0 0 8px 3px rgba(99, 102, 241, 0.45);
+}
+
+.login-button {
+  width: 100%;
+  background: #6366f1;
+  color: white;
+  font-weight: 700;
+  padding: 0.85rem 0;
+  border-radius: 1rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+  border: none;
+  font-family: "Inter", sans-serif;
+  box-shadow: 0 8px 15px rgba(99, 102, 241, 0.5);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease,
+    transform 0.2s ease;
+  user-select: none;
+  margin-top: 20px;
+}
+
+.login-button:hover:not(:disabled) {
+  background: #4f46e5;
+  box-shadow: 0 12px 25px rgba(79, 70, 229, 0.7),
+    0 8px 12px rgba(79, 70, 229, 0.5);
+  transform: translateY(-2px);
+}
+
+.login-button:disabled {
+  background: #a5b4fc;
+  box-shadow: none;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.login-info {
+  font-size: 0.875rem;
+  color: #64748b;
+  text-align: center;
+  font-style: italic;
+  user-select: none;
+  margin-top: 1rem;
+}
+
+.login-box,
+.login-box * {
+  box-sizing: border-box;
+}

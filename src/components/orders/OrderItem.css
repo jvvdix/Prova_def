@@ -1,0 +1,128 @@
+.order-item {
+  background-color: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 15px rgb(0 0 0 / 0.05);
+  padding: 1.5rem 1.5rem;
+  transition: box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.order-item:hover {
+  box-shadow: 0 12px 20px rgb(0 0 0 / 0.1);
+}
+
+.order-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.order-item-info {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.order-item-product {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #111827;
+  margin: 0 0 0.25rem 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.order-item-number {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+.order-item-status {
+  display: inline-flex;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  border-radius: 9999px;
+  white-space: nowrap;
+  user-select: none;
+}
+
+.status-in_progress {
+  background-color: #e0e7ff;
+  color: #4338ca;
+}
+
+.status-shipped {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.status-cancelled {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
+
+.order-item-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.order-item-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  color: #374151;
+}
+
+.order-item-row .label {
+  color: #6b7280;
+}
+
+.order-item-row .value.total {
+  font-weight: 600;
+  color: #111827;
+}
+
+.order-item-footer {
+  border-top: 1px solid #e5e7eb;
+  padding-top: 1rem;
+}
+
+.order-item-link {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #4f46e5;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  transition: color 0.3s ease;
+}
+
+.order-item-link:hover,
+.order-item-link:focus {
+  color: #4338ca;
+  outline: none;
+}
+
+.arrow {
+  font-weight: 700;
+}
+
+@media (max-width: 640px) {
+  .order-item-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .order-item-status {
+    margin-top: 0.5rem;
+  }
+}

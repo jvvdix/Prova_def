@@ -1,0 +1,80 @@
+.productlist-container {
+  border: solid;
+}
+
+.recent-orders {
+  font-family: "Inter", sans-serif;
+  max-width: 100%;
+}
+
+.order-product-name {
+  margin-bottom: 0.2rem;
+}
+
+.order-details {
+  margin: 0;
+}
+
+.dataproduct {
+  margin-bottom: 20px;
+}
+
+.order-status {
+  white-space: nowrap;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 0.875rem;
+  background-color: #6b7280;
+  color: #ffffff;
+}
+
+.status-in-lavorazione {
+  background-color: #f59e0b;
+  color: #ffffff;
+}
+
+.status-spedito {
+  background-color: #10b981;
+  color: #ffffff;
+}
+
+.status-annullato {
+  background-color: #ef4444;
+  color: #ffffff;
+}
+
+.order-total {
+  font-weight: 600;
+}
+
+.recent-orders-item {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.recent-orders-item:last-child {
+  border-bottom: none;
+}
+
+.recent-orders-footer {
+  text-align: center;
+}
+
+.recent-orders-footer a {
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  background: #6366f1;
+  color: #fff;
+  border-radius: 9999px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.08);
+}
+
+.recent-orders-footer a:hover {
+  background: #4f46e5;
+  box-shadow: 0 4px 16px rgba(99, 102, 241, 0.15);
+  transform: translateY(-2px) scale(1.03);
+}
