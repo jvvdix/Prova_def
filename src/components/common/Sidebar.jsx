@@ -24,6 +24,7 @@ const Sidebar = ({ isOpen, onClose }) => {
 
   return (
     <>
+      {/* overlay */}
       <div
         className={`sidebar-overlay ${isOpen ? "show" : ""}`}
         onClick={handleOverlayClick}
@@ -49,6 +50,7 @@ const Sidebar = ({ isOpen, onClose }) => {
         </div>
 
         <nav className="sidebar-nav">
+          {/* sidebar links */}
           {SIDEBAR_ITEMS.map((item) => {
             const isActive = location.pathname === item.path;
             return (

@@ -32,7 +32,7 @@ const Dashboard = () => {
           color="bg-purple-500"
         />
       </div>
-
+      {/* recent orders section */}
       <div className="recent-orders-grid">
         <RecentOrders />
       </div>
